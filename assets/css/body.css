@@ -5,7 +5,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #262626;
+    background-color: grey;
     font-family: "è‹¹æ–¹";
     font-weight: 350;
     line-height: 2.1rem;
@@ -83,8 +83,8 @@ p {
 
 #top {
     width: 100%;
-    height: 100vh;
-    background-image: url(../image/cover.png);
+    /*height: 100vh;*/
+    background-image: none !important; /* 确保背景图不覆盖 */
     background-position: center center;
     background-size: cover;
 }
@@ -391,23 +391,29 @@ p {
     transition: all 1s;
 }
 
+/* 按钮位置 */
+
+
 ul {
     list-style: none;
     position: fixed;
-    width: 54px;
-    left: -15px;
+    width: auto;       /* 改为自动宽度（原54px太窄） */
+    right: 20px;       /* 贴右（原left: -15px） */
+    left: auto;        /* 取消左定位 */
+    top: 10px;         /* 保留顶部距离 */
     margin-left: 0;
-    top: 15px;
     overflow: hidden;
-    z-index: 100
+    z-index: 100;
+    display: flex;     /* 新增：水平排列 */
+    gap: 10px;          /* 新增：按钮间距 */
 }
 
 ul li {
     position: relative;
     width: 48px;
     height: 48px;
-    background: red;
-    margin-top: 3px;
+    background: red;   /* 测试用颜色，实际用你的背景图 */
+    margin-top: 0;     /* 取消上间距（原margin-top: 3px） */
     cursor: pointer;
     overflow: hidden;
 }
@@ -442,26 +448,14 @@ ul li {
     line-height: 48px;
     font-size: 12px;
     font-weight: 700;
-    color: #fff !important;
+    color: white !important;       /* 字体颜色设为白色（原已是白色，可省略） */
     border-radius: 3px;
-    background-color: #3e3e3e;
+    background-color: transparent !important; /* 关键修改：背景透明 */
     text-decoration: none !important;
     text-align: center;
-    -webkit-transform-origin: -50% 50%;
-    transform-origin: -50% 50%;
-    -webkit-transform: rotate3d(0, 0, 1, 90deg);
-    transform: rotate3d(0, 0, 1, 90deg);
-    -webkit-transition: -webkit-transform .3s ease-in;
-    transition: transform .3s ease-in;
-    opacity: 0\9;
-    filter: alpha(opacity=0)\9;
-}
-
-li:hover a {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    transform: rotate3d(0, 0, 1, 0deg) !important;/* 强制按钮为默认角度（不旋转） */
+    opacity: 1 !important; /* 强制显示 */
+    transition: none !important;
 }
 
 #gif_2287 {
@@ -1044,4 +1038,142 @@ audio {
 }
 
 @media only screen and (max-width: 320px) {
+}
+
+.people_page {
+  max-width: 1000px;
+  margin: auto;
+  font-family: sans-serif;
+  color: #2b2b2b;
+}
+
+.about-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.photography {
+  font-size: 40px;
+  letter-spacing: -0.01em;
+}
+
+.intro {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.portfolio-stack {
+  position: relative;
+  width: 350px;    /* 根据需要调节 */
+  height: 350px;
+  margin: auto;
+}
+
+.stack-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.stack-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* 可选：加点圆角 */
+}
+
+.stack-item.active {
+  opacity: 1;
+}
+
+/* 基础样式 */
+[class^="section"] {
+  position: sticky; /* 改为整个 section 固定 */
+  top: 45px;          /* 开始固定 */
+  height: 100vh;   /* 每个 section 占满整个视口 */
+  margin-bottom: 0; /* 移除原有间距 */
+  z-index: 1;      /* 初始层级 */
+  overflow: hidden; /* 隐藏超出部分 */
+}
+
+/* 通过递增 z-index 实现覆盖效果 */
+.section1 { z-index: 1; }
+.section2 { z-index: 2; }
+.section3 { z-index: 3; }
+
+[class^="tag-label"] {
+  --triangle-size: 30px;
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  height: 30px;
+  margin-bottom: -4px;
+  z-index: 10; /* 确保标签始终在最上层 */
+}
+
+[class^="tag-label"]::after {
+  content: "";
+  position: absolute;
+  right: calc(-1 * var(--triangle-size));
+  top: 0;
+  width: var(--triangle-size);
+  height: 100%;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+[class^="work-card"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: calc(100vh - 60px); /* 高度 = 视口高度 - 标签和间距 */
+  overflow-y: auto; /* 允许内容滚动 */
+}
+
+/* 独立定制每个section */
+/* SECTION 1 */
+.section1 { z-index: 1; }
+.tag-label1 {
+  background: white;
+}
+.tag-label1::after {
+  background: white;
+}
+.work-card1 {
+  background: white;
+}
+
+/* SECTION 2 */
+.section2 { z-index: 2; }
+.tag-label2 {
+  background: yellow;
+  margin-left: 190px; /* 向右平移 20px */
+}
+.tag-label2::after {
+  background: yellow;
+}
+.work-card2 {
+  background: yellow;
+}
+
+/* SECTION 3 */
+.section3 { z-index: 3; }
+.tag-label3 {
+  background: blue;
+  margin-left: 383px; /* 向右平移 20px */
+}
+.tag-label3::after {
+  background: blue;
+}
+.work-card3 {
+  background: blue;
 }
