@@ -32,289 +32,363 @@
             </li>
     </ul></div>
 
-    <div class="fengmian">
-        <img class="fengmian-01" src="assets/image/main.jpg">
+    <div id="fengmian">
+        <div class="fengmian">
+            <img class="fengmian-01" src="assets/image/main.jpg">
 
-        <!-- 添加在图片左下角的文字 -->
-        <div style="position: absolute; left: 180px; bottom: 240px; z-index: 10; color: white; max-width: 60%;">
-            <h2 class="hero__copy" style="margin: 0; text-align: left;">
-                <div class="hero__copy__main" style="font-size: 40px; font-weight: bold; line-height: 1.3;">
-                    连 接 人 、 城 市 和 医 疗 保 健 。
-                </div>
-                <div class="hero__copy__sub" style="font-size: 14px; margin-top: 8px; font-weight: normal;">
-                    关怀至上，始终如一。
-                </div>
-            </h2>
+            <!-- 添加在图片左下角的文字 -->
+            <div style="position: absolute; left: 180px; bottom: 360px; z-index: 10; color: white; max-width: 60%;">
+                <h2 class="hero__copy" style="margin: 0; text-align: left;">
+                    <div class="hero__copy__main" style="font-size: 40px; font-weight: bold; line-height: 1.3;">
+                        被 困 在 梦 与 醒 之 间：
+                    </div>
+                    <div class="hero__copy__main" style="font-size: 40px; font-weight: bold; line-height: 1.3;">
+                        发 作 性 睡 病 患 者 的 挣 扎 与 困 境
+                    </div>
+                </h2>
+            </div>
         </div>
     </div>
 
-<!--    <div id="intro">-->
-<!--        <div class="p_left">-->
-<!--            <p>&nbsp;</p>-->
-<!--            <p>近年来</p>    -->
-<!--            <p>心理脆弱的人不要玩微博。我们收集了<span class="p_stress">293篇</span>，尝试从</p>-->
-<!--            <p class="audiobox">心理情感分析，运用数据可听化，结合键盘声, 制作成一首<span class="p_stress">“键盘侠”之声。</span>-->
-<!--                <i class="caifangyinpin"></i>-->
-<!--                <audio class="yinpin" src="image/audio/”键盘侠“之声 .mp3"></audio></p>-->
-<!--            <p></p>-->
-<!--        </div>-->
+    <div style="
+        width: 100%; /* 确保容器宽度撑满 */
+        height: 100%; /* 确保容器有足够高度 */
+        z-index: 1; /* 确保内容在模糊层之上 */
+        background-image: url('assets/image/1.svg');
+        background-position: top; /* 背景图顶部与容器顶部对齐 */
+        background-repeat: no-repeat;
+        background-size: contain; /* 保持图片完整显示 */
+        background-size: 100% auto; /* 宽度100%，高度自动 */
+    ">
 
-<!--        <div class="img_large" id="writ" style="text-align: center;">-->
-<!--            <img src="assets/image/7月29日-(1).gif" class="img" id="writ_gif" style="width: 60em; margin: 0px auto; opacity: 1;">-->
-<!--        </div>-->
-<!--    </div>-->
-
-<div id="husband">
-    <div class="people_page">
-        <p>&nbsp;</p>
-      <section class="about-section">
-        <div class="hero-text">
-          <h1>Wildy Riftian</h1>
-          <p class="photography">photography</p>
-        </div>
-        <p class="intro">
-          I'm an enthusiastic and multifaceted visual artist, motion designer, graphic designer, illustrator, and photographer. Passionate about pushing creative boundaries, I constantly seek to expand my expertise and combine skills across various mediums. I thrive on problem-solving and embrace challenges WITH A PROACTIVE AND OPEN-MINDED APPROACH.
+        <div style="height: 60px;"></div> <!-- 固定高度空行 -->
+        <p class="custom-text1" style="text-indent: 2em;">
+            夜色深沉时，她的意识在清醒与混沌间反复沉浮——身体被无形的重量禁锢，灵魂却困在梦与醒的边界。而白昼的阳光下，突如其来的困意又如潮水般将她吞没，在旁人诧异的目光里，她不得不与眼皮的重量作徒劳的抗争。这中国就是发作性睡病。
         </p>
-      </section>
-
-      <section class="portfolio-stack">
-          <div class="stack-item active">
-            <img src="https://framerusercontent.com/images/3rK2nHeJyhTzqZYuJrd9VB3FVQ.png" alt="Motion">
-          </div>
-          <div class="stack-item">
-            <img src="https://framerusercontent.com/images/6uKIl3QharhWhi5P87stFJHI9OI.png" alt="Branding">
-          </div>
-          <div class="stack-item">
-            <img src="https://framerusercontent.com/images/J4hmkgfmraIPwojMRDnptTmHDgE.png" alt="Editorial">
-          </div>
-          <div class="stack-item">
-            <img src="https://framerusercontent.com/images/TPE0rKe2h74xeQpdy728y6QTbE.png" alt="Photoworks">
-          </div>
-          <div class="stack-item">
-            <img src="https://framerusercontent.com/images/XE2pXxwidYXM13msdCMW69TVA.png" alt="Illustration">
-          </div>
-          <div class="stack-item">
-            <img src="https://framerusercontent.com/images/FgwhUGnDCJ3ZZM5OcK3tCj0FQ.png" alt="3D Tech">
-          </div>
-        </section>
-
-        <script>
-          const items = document.querySelectorAll('.stack-item');
-          let index = 0;
-
-          setInterval(() => {
-            items[index].classList.remove('active');
-            index = (index + 1) % items.length;
-            items[index].classList.add('active');
-          }, 1000);
-        </script>
-    </div>
-
-    <div id="story">
-        <p>&nbsp;</p>
-        <div class="img_600" style="padding-bottom: 0px;margin-top: 10px; z-index: 10;">
-            <img src="assets/image/标题1.png" class="img">
-        </div>
-
-        <div align="center">
-            <img src="assets/image/图片1.png" class="img" ;="" style="width:35em; margin-top: -50px">
-        </div>
-
-        <p class="p_italic">张某（一名素人教师）</p>
-        <p class="p_italic">扫把星。肖像图。  </p>
-        
-
-    
-        <p style="text-align: justify">常见情形。在查阅相关资料和老师的指导下<span class="p_stress">关键词</span>截止2022年5月，筛选出有效案例<span class="p_stress">共，</span>大门。
+        <p class="custom-text1" style="text-indent: 2em;">
+            "发作性睡病的发作是不定时的，并且我自身很难控制它。
+            如果不吃药，我几乎无法正常生活，连走路都成问题，所以我只能靠在沙发上，以便发作时能直接躺下”暴敏冬女士描述着她与病情作伴的日常,“吃药后虽然可以正常行走，但一旦累了或情绪激动，仍然会发作，只是频率降低了很多。"
         </p>
 
-        <p style="text-align: justify">1<span class="p_stress">性别、职业和行业</span>的文书。</p>
+        <p class="custom-text11" style="text-indent: 2em;">
+            这样突如其来的睡意，并非“懒惰”，而是一种被公众误解的疾病——发作性睡病。
+        </p>
+        <div class="people_page">
+                <p>&nbsp;</p>
+              <section class="portfolio-stack">
+                  <div class="stack-item active">
+                    <img src="assets/image/skip1.png" alt="Motion">
+                  </div>
+                  <div class="stack-item">
+                    <img src="assets/image/skip2.png" alt="Branding">
+                  </div>
+                  <div class="stack-item">
+                    <img src="assets/image/skip3.png" alt="Editorial">
+                  </div>
+                  <div class="stack-item">
+                    <img src="assets/image/skip4.png" alt="Photoworks">
+                  </div>
+                  <div class="stack-item">
+                    <img src="https://framerusercontent.com/images/XE2pXxwidYXM13msdCMW69TVA.png" alt="Illustration">
+                  </div>
+                  <div class="stack-item">
+                    <img src="https://framerusercontent.com/images/FgwhUGnDCJ3ZZM5OcK3tCj0FQ.png" alt="3D Tech">
+                  </div>
+                </section>
 
-        
-        <p id="p_mobile2">可以看到</p>
-        <p style="line-height: 0;">&nbsp;</p>
+                <script>
+                  const items = document.querySelectorAll('.stack-item');
+                  let index = 0;
 
-
-        <div class="child_reason_wrap" style="padding-top: 0px;">
-                <div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="inset: 0px auto auto 0px; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 576px; height: 0px;"><div class="child_reason_imgs" id="child_reason_imgs" "="" style="width: 576px; position: absolute; margin: auto; inset: 0px auto auto 0px;">
-                    <img src="assets/image/图1暗色.png" class="img" id="child_reason1" style=" width:115%; padding-left:120px;margin-top: 15px;">
-                </div></div>
-                <div class="child_reason_desc" id="child_reason_desc">
-                    
-                    <div class="child_reason_text" id="child_reason_text1">
-                        其中，占比57.9%。
-                    </div>
-                    <div class="child_reason_text" id="child_reason_text2">
-                        在篇，又以占34.8%。
-                    </div>
-                    <div class="child_reason_text" id="child_reason_text3">
-                        在，占比67.1%。
-                    </div>
-                </div>
-        </div>      
-
-    </div>
-
-    <div align="center">
-        <img src="assets/image/1234/图片2.png" class="img" ;="" style="width:35em; ">
-    </div>
-
-    <p style="text-align: justify">2022年4月3日</p>
-
-    <p style="text-align: justify">但是她也的<span class="p_stress">评论区评论</span>道：<span class="p_stress">“200块，这是在打发叫花子呢？”</span>等一系列不好她，<span class="p_stress">说她没良心，外卖小哥那么辛苦的为你父亲送餐，跑到了凌晨2点，你却打发他200元钱。</span></p>   
-    <p style="text-align: justify">2022年4月7日<span class="p_stress">。</span></p>
-    
-    <div class="pic-box" style="margin-top: 60px; text-align: center;">
-        <iframe src="assets/index.html" width="600" height="600" scrolling="no" frameborder="0" align=""></iframe>
-    </div>
-
-
-    <p style="text-align: justify">2002年，博客开始在中国推动。在统计的293篇文书中，在<span class="p_stress">博客</span>平台上对国大陆第一个互联网BBS上线后，<span class="p_stress">论坛</span>在2005年到2008年迎来黄金阶段，在早期的法律文书的网络暴力也多出现在论坛和网站上。2012年<span class="p_stress">微博</span>用户达到3.1亿，在经过2013-2015年其他平台（微信、论坛等）的冲击下，用户有所下降后，在2018年达到3.5亿人。</p>
-    <p style="text-align: justify">短视频是近年新兴的2020年<span class="p_stress">快手、抖音等短视频软件</span>也成为网络暴力的平台。</p>
-    <p style="text-align: justify"><span class="p_stress">这提醒我们网络暴力发生的背后每个平台都有一定的责任。</span></p>
-    <p style="text-align: justify">与微信和QQ的熟人圈子不同，博客、论坛、微博是非熟人圈子，从梳理的文书上看，发生在<span class="p_stress">微博上的网络暴力，施暴者与被施暴者是陌生人居多。</span>而发生在微信群里与朋友圈的网络暴力更多的是同一小区居民或者是同事关系。</p>
-    <p style="text-align: justify">近年来降低，<span class="p_stress">网民群体主要以青年为主。</span>3月12日，微博发布《2020微博用户发展报告》。报告显示，微博用户群体继续呈现年轻化趋势，其中90后和00后的占比接近80%。</p>
-    <p style="text-align: justify">二是缺乏公共话语平台，网民的日常得不到发泄。《第31次互谅网络发展状况统计报告》显示，网民群体中平均月收入在1500元以下的占43.1%。<span class="p_stress">处于弱势地位的群体，更容易产生各种仇视社会的心理，</span>他们在微博社区存在，在掌握了话语权之后将对现实社会的不满情绪移植到线上。</p>
-   
-
-   <p style="text-align: justify">
-  被施暴者轻则名誉受损、社会性死亡、患上抑郁症，重则自杀。  <span class="p_stress">网络暴力给人带来的伤害不容小觑。</span>我们通过将293篇法律文书中提到网络暴力对被施暴者影响进行分析，其中对形象、心理和生活的影响提到最多。
-   </p>
-   
-
-
-    <div class="baby_reason_wrap" "="" style="padding-top: 0px;">
-        <div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="inset: 0px auto auto 0px; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 576px; height: 0px;"><div class="baby_reason_imgs" id="baby_reason_imgs" style="width: 576px; position: absolute; margin: auto; inset: 0px auto auto 0px;">
-            <img src="assets/image/1234/图3.png" class="img" id="baby_reason1" style="width:120%; margin-left: 110px"> 
-            <img src="assets/image/图片4形象高亮.png" class="img" id="baby_reason2" style="width:120%; margin-left: 110px">
-            <img src="assets/image/图片3心理伤害高亮.png" class="img" id="baby_reason3" style="width:120%; margin-left: 110px">
-            <img src="assets/image/图片3全部高亮.png" class="img" id="baby_reason4" style="width:120%; margin-left: 110px">
-        </div></div>
-        <div class="baby_reason_desc" id="baby_reason_desc">
-            <div class="baby_reason_text" id="baby_reason_text1">
-                其中，对“形象”的损害占比最大，占39.7%。对形象带来的伤害主要来自“社会评价降低”、“名誉损害”。
+                  setInterval(() => {
+                    items[index].classList.remove('active');
+                    index = (index + 1) % items.length;
+                    items[index].classList.add('active');
+                  }, 1000);
+                </script>
             </div>
-            <div class="baby_reason_text" id="baby_reason_text2">
-                对心理的影响是网络暴力带来的第二大伤害，占比28.8%。“精神受到伤害”、“身心疲惫”、”抑郁“是主要表现。
+
+        <p class="custom-text1" style="text-indent: 2em;">
+            这种罕见神经系统疾病严重影响生活质量，即使夜间睡眠充足，患者仍饱受无法抗拒的日间嗜睡折磨。
+            据发病率推算，全球约有300多万患者,中国患者约在70万左右，然而我国真正确诊的患者少之又少。
+        </p>
+
+        <div style="height: -5px;"></div> <!-- 固定高度空行 -->
+        <div class="split-container1">
+            <!-- 左侧文字部分 -->
+            <div class="text-content1">
+                <p class="custom-text13" style="text-indent: 2em;">
+                    发作性睡病通常起病于儿童和青少年。我国患者发病高峰年龄小于5~ 9 岁，由于病程贯穿患者求学和个性发展关键时期， 临床症状严重影响患者的学习和生活。
+                </p>
+                <p class="custom-text13" style="text-indent: 2em;">
+                    《我国发作性睡病疾病患者疾病特征、治疗现状与经济负担调查》中发现，10. 88% 的成人患者、16. 09% 的儿童/青少年患者有因为发作性睡病而被拒学的经历。
+                </p>
             </div>
-            <div class="baby_reason_text" id="baby_reason_text3">
-                数据显示，网络暴力的受害者比未在现实生活中被骚扰的人更多出现严重的<span class="p_stress">愤怒、焦虑、抑郁和失眠症状</span>；他们中更多人产生过自杀的想法，接近三成，是未在现实生活被骚扰欺凌的受害者中有自杀想法比例的<span class="p_stress">三倍。</span>
+
+            <!-- 右侧图片部分 -->
+            <div class="image-content1">
+                <img src="assets/image/section1.2.png" alt="发作性睡病相关图片" style="width:80%; height:auto;">
+                <p class="custom-text1" style="font-size: 16px; color: black; margin: 8px 0 0 10px;">
+                    数据来源：<br>
+                    《我国发作性睡病疾病患者疾病特征、治疗现状与经济负担调查》
+                </p>
             </div>
         </div>
 
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+        <div class="split-container2">
+            <!-- 左侧图片部分 -->
+            <div class="image-content2">
+                <img src="assets/image/section1.3.png" alt="发作性睡病相关图片" style="width:80%; height:auto;">
+                <p class="custom-text1" style="font-size: 16px; color: black; margin: 20px 0 0 10px;">
+                    数据来源：<br>
+                    《中国发作性睡病患者疾病经济负担与生命质量研究》
+                </p>
+            </div>
+
+            <!-- 右侧文字部分 -->
+            <div class="text-content2">
+                <p class="custom-text13" style="text-indent: 2em;">
+                    根据《中国发作性睡病患者疾病经济负担与生命质量研究》，超过90%的患者因患病受到过“误解”，大多数患者遭受过“嘲笑”。仅半数患者遇到过“同情”“理解”“包容”等正面反应。
+                </p>
+                <p class="custom-text13" style="text-indent: 2em;">
+                    超90%的发作性睡病患者可能可能存在抑郁的情况，且约半数的患者可能存在中重度及以上程度的抑郁。
+                </p>
+            </div>
+        </div>
+
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+        <p class="custom-text1" style="text-indent: 2em;">
+            那些被误解为"懒散""嗜睡"的无形病症化作千钧重力，如洪水猛兽侵袭着他们，潜移默化地影响着他们的学业、事业、生活与社交。
+        </p>
+
+        <p class="custom-text12">
+            发作性睡病究竟是什么？<br>
+            它又如何侵蚀患者的日常生活？<br>
+            这群"清醒的梦游者"又该如何寻找出路？<br>
+            在关注与理解的空白处，发作性睡病患者的需求正等待被真正看见。
+        </p>
     </div>
-   
-    <p style="margin-top: -80px;text-align: justify"> 
 
-    </p><div align="center">
-        <img src="assets/image/1234/图片3.png" class="img" ;="" style="width:35em">
+    <div id="husband" style="
+        width: 100%; /* 确保容器宽度撑满 */
+        height: 100%; /* 确保容器有足够高度 */
+        z-index: 1; /* 确保内容在模糊层之上 */
+        background-image: url('assets/image/2.svg');
+        background-position: top; /* 背景图顶部与容器顶部对齐 */
+        background-repeat: no-repeat;
+        background-size: contain; /* 保持图片完整显示 */
+        background-size: 100% auto; /* 宽度100%，高度自动 */
+    ">
+
+        <div style="height: 35px;"></div> <!-- 固定高度空行 -->
+        <p class="custom-text_title">
+             关于发作性睡病，我们需要了解......
+        </p>
+
+        <div class="text-with-bg" style="
+            background-image: url('assets/image/section1.4.png');
+            background-size: contain; /* 完整显示图片（可能留白） */
+            background-position: center; /* 居中显示 */
+            background-repeat: no-repeat;
+            padding: 40px;              /* 文字与边缘间距 */
+            margin: 30px 0;             /* 与上下内容的外边距 */
+        ">
+            <!-- 原有文字内容（保持原缩进样式） -->
+            <div style="height: 80px;"></div> <!-- 固定高度空行 -->
+            <p class="custom-text1" style="text-indent: 2em;">
+                发作性睡病属于终身性睡眠-觉醒障碍疾病，目前无法被完全治愈。日间过度思睡是其最常见的症状，即使在夜晚睡了很长时间，白天仍然感到极度困倦，并且无法控制地入睡。
+                这种嗜睡在任何场合都可能发生，比如行走、交谈、吃饭，甚至开车时。
+            </p>
+            <p class="custom-text1" style="text-indent: 2em;">
+                其他常见临床表现有：猝倒（在有强烈情绪时，全身肌肉张力突然消失）、睡眠瘫痪（身体暂时无法动弹，通常持续几秒到几分钟）、夜间睡眠紊乱（入睡困难、易醒、多梦等症状，导致夜间睡眠质量下降）和出现幻觉。
+            </p>
+            <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+            <img src="assets/image/section2.1.png"
+                 alt="图片描述文本"
+                 width="800"
+                 height="600"
+                 style="display: block; margin: 0 auto;">
+        </div>
+
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+        <img src="assets/image/section2.2.png"
+                 alt="图片描述文本"
+                 width="800"
+                 height="600"
+                 style="display: block; margin: 0 auto;">
+
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+        <p class="custom-text1" style="text-indent: 2em;">
+            此外，发作性睡病还可伴有肥胖、性早熟、精神障碍、注意力不集中、记忆力下降、偏头痛等症状。
+        </p>
+        <p class="custom-text1" style="text-indent: 2em;">
+            目前，发作性睡病病因尚未不清楚。有研究表明，发作性睡病的多种相关因素，如：遗传机制、自身免疫机制、感染机制以及神经环路变化。
+        </p>
+
+        <div style="height: 30px;"></div> <!-- 固定高度空行 -->
+        <div style="text-align: center;">
+            <img src="assets/image/section2.3.png"
+                 alt="图片描述文本"
+                 width="800"
+                 height="600"
+                 style="display: block; margin: 0 auto; max-width: 100%;">
+            <p class="custom-text1" style="font-size: 16px; color: black; margin: -270px 0 0 700px;">
+                数据来源：《中国发作性睡病患者疾病经济负担与生命质量研究》
+            </p>
+        </div>
     </div>
-
-    
-
-    <p style="text-align: justify">2017年5月底，因在淘宝上买卖迪奥喷雾粉底液一事发生矛盾，本来该矛盾在淘宝的介入后已得到圆满解决，但在买家煽动和唆使下其他网友在新浪<span class="p_stress">微博上对小林进行人格侮辱。</span></p>
-    <p style="text-align: justify">小林先是以发送律师函进行警告，后公开在新浪微博发布律师维权声明，而且原告还将律师函特别＠相关网友。但他们依旧进行冷嘲热讽，更加肆无忌惮地对原告进行侮辱和谩骂。</p>
-    <p style="text-align: justify">在百般痛苦中，小林于多次在微博上进行举报，但新浪微博拒绝对相关侵权留言进行删除、屏蔽、断开链接处理。这些侮辱<span class="p_stress">对小林的生活、学习带来非常不利影响</span>，<span class="p_stress">她每日必须服用抗抑郁药物</span>舍曲林。</p>
-    <p style="text-align: justify">因难以承受社会上众多不明真相网友的误解和冷嘲热讽，小林于2017年5月31日在宿舍自杀。幸亏被同室学友及时发现并报警就医，这才避免悲剧发生。    </p>
-    <p style="text-align: justify">2019年2月5日，联合国儿童基金会警告称，<span class="p_stress">全球70.6%的15至24岁年轻网民</span>正面临着网络暴力、欺凌和骚扰的威胁。中国青少年研究中心2021年开展的“青少年网络安全研究”调查数据显示，<span class="p_stress">17.4%的青少年</span>在上网过程中遭受过网络暴力。</p>
-
-    <div class="img_600" id="suicide">
-        <img src="assets/image/suicide1.png" class="img" id="suicide1">
-        <img src="assets/image/suicide2.png" class="img" id="suicide2">
-    </div>
-
-    
-
-    <p style="text-align: justify">值得注意的是，新型网络暴力不断涌现。网络暴力已经演变成图文音视频全方位轰炸，甚至存在产业化的趋势。<span class="p_stress">新型表现形式</span>主要是图片&amp;音频攻击、升级文字攻击（“大字报”、弹幕刷屏）、私信轰炸、反串（施暴者伪装成受害者或与受害者立场相同的人）、人肉搜索五种。</p>
-    <p style="text-align: justify">结合数起案例，人民网总结出这样的大致路径：爆料者挑起话题——“吃瓜群众”网络围观——“好事之徒”煽动舆论——网友“人肉搜索”——真相出现反转——爆料者遭遇舆论反噬——舆论泛化谩骂——社会撕裂加剧。</p>
-
 
 
     <div id="child">
-        <p>&nbsp;</p>
-        <div class="img_600" style="padding-bottom: 0px;  z-index: 10;">
-            <img src="assets/image/标题2.png" class="img">
-        </div>
+        <div style="height: 35px;"></div> <!-- 固定高度空行 -->
+
+        <p class="custom-text_title">
+             “长达十年的等待”——发作性睡病的诊断难题
+        </p>
 
         <div class="section1">
           <div class="tag-label1">FEATURED WORK 01</div>
-          <div class="work-card1">
-            <p style="margin-top: -30px">
-              当发生网络暴力时，越来越多的人选择举起法律的武器。
-            </p>
-            <p style="text-align: justify">
-              2020年7月7日，小吴（化名）下楼取快递时被便利店店主郎某偷拍了视频，
-              编造“少妇出轨快递小哥”聊天内容，不断进行转发，谣言在互联网发酵。
-              小吴也收到了大量询问以及谩骂的信息。
-              <span class="p_stress" style="border-bottom: 1px solid #ed8c12">
-                “一个国外的朋友看到了捏造的传播内容，把我臭骂了一通。”
-              </span>
-            </p>
-            <p style="text-align: justify">
-              2020年8月7日，消息传到了小吴所在的公司，同事都看到了。
-              <span class="p_stress" style="border-bottom: 1px solid #ed8c12">小吴选择报警。</span>
-            </p>
+            <div class="work-card1">
+                <p class="custom-text1" style="text-indent: 2em;">
+                    暴敏冬为我们分享了一个江苏女孩的故事，女孩在15岁那年因为产生幻觉而被确诊为精神分裂症，并进行了长达十年的治疗。
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    “一个女孩子，从15岁到25岁，本应该是她最美好的年华，却被困在了‘精神疾病’的枷锁之下。”
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    在女孩25岁时，他的父亲过网络了解到发作性睡病，重新带女孩去一家大医院检查，才发现她这十年间患有的其实不是精神分裂症，而是发作性睡病。
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    “医生说，她本没有精神分裂症，但由于吃了十年治疗‘精神分裂症’的药物，最后查出伴有精神分裂症。”
+                </p>
           </div>
         </div>
 
         <!-- 后面继续添加 -->
         <div class="section2">
           <div class="tag-label2">FEATURED WORK 02</div>
-          <div class="work-card2"> ... 第二部分内容 ... </div>
+            <div class="work-card2">
+                <p class="custom-text1" style="text-indent: 2em;">
+                    暴敏冬为我们分享了一个江苏女孩的故事，女孩在15岁那年因为产生幻觉而被确诊为精神分裂症，并进行了长达十年的治疗。
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    “一个女孩子，从15岁到25岁，本应该是她最美好的年华，却被困在了‘精神疾病’的枷锁之下。”
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    在女孩25岁时，他的父亲过网络了解到发作性睡病，重新带女孩去一家大医院检查，才发现她这十年间患有的其实不是精神分裂症，而是发作性睡病。
+                </p>
+                <p class="custom-text1" style="text-indent: 2em;">
+                    “医生说，她本没有精神分裂症，但由于吃了十年治疗‘精神分裂症’的药物，最后查出伴有精神分裂症。”
+                </p>
+            </div>
         </div>
 
         <div class="section3">
           <div class="tag-label3">FEATURED WORK 03</div>
-          <div class="work-card3"> ... 第三部分内容 ... </div>
-        </div>
-    </div>
-
-    <div id="solution">
-        <div class="img_600" style="padding-bottom: 15px; margin-top:-30px; z-index: 10;">
-            <img src="assets/image/标题3.png" class="img">
-        </div>
-            <p style="margin-top:-50px; text-align: justify">中国***认为，目前<span class="p_stress">更复杂的环节是在事前预警，</span>还没有相应的法律法规提出具备操作性的要求。</p>
-            <p style="text-align: justify">在诉诸法律之前，<span class="p_stress">第一防线。</span></p>
-
-            <p><span class="p_stress_ending" style="font-size: 20px;font-weight: bold; ">· 加强监管</span></p>
-            <p style="text-align: justify">2022年3月3日</p>
-            <p style="text-align: justify">中国***建议，<span class="p_stress">开发针对性功能。 </span></p>
-            <p style="text-align: justify">学者董晨宇从<span class="p_stress">事前、事中</span>两个角度提供了一些平台介入的方法。他认为，在事前，平台可以通过营造良好的文化氛围，来引导舆论；在事中，平台可以通过大数据筛查、机器学习等技术手段来介入网暴事件，减少对当事人的伤害。</p>
-            <p></p>
-            <p><span class="p_stress_ending" style="font-size: 20px;font-weight: bold;">· 政府开展治理</span></p>
-            <p style="text-align: justify">4月24日</p>
-            <p style="text-align: justify">6月27日<span class="p_stress">《》</span>，规定于8月1日</p>
-            <p><span class="p_stress_ending" style="font-size: 20px;font-weight: bold;">·保护</span></p>
-            <p>我们在。</p>
-
-            <div class="img_600">
-                <!-- <img src="assets/image/自我保护.png" class="img"> -->
+            <div class="work-card3">
+                <p class="custom-text1">
+                    暴敏冬为我们分享了一个江苏女孩的故事，女孩在15岁那年因为产生幻觉而被确诊为精神分裂症，并进行了长达十年的治疗。
+                    “一个女孩子，从15岁到25岁，本应该是她最美好的年华，却被困在了‘精神疾病’的枷锁之下。”
+                    在女孩25岁时，他的父亲过网络了解到发作性睡病，重新带女孩去一家大医院检查，才发现她这十年间患有的其实不是精神分裂症，而是发作性睡病。
+                    “医生说，她本没有精神分裂症，但由于吃了十年治疗‘精神分裂症’的药物，最后查出伴有精神分裂症。”
+                </p>
+                <p class="custom-text1">
+                    《我国发作性睡病疾病患者疾病特征、治疗现状与经济负担调查》中，超过50%的发作性睡病患者曾被误诊为精神或心理障碍。
+                    一项国际研究表明，发作性睡病最常被误诊为抑郁症、焦虑症、注意力缺陷多动障碍 、失眠症、以及嗜睡症。
+                </p>
+                <p class="custom-text1">
+                    “医生说，她本没有精神分裂症，但由于吃了十年治疗‘精神分裂症’的药物，最后查出伴有精神分裂症。”
+                </p>
+                <p class="custom-text1">
+                    暴敏冬为我们分享了一个江苏女孩的故事，女孩在15岁那年因为产生幻觉而被确诊为精神分裂症，并进行了长达十年的治疗。
+                    “一个女孩子，从15岁到25岁，本应该是她最美好的年华，却被困在了‘精神疾病’的枷锁之下。”
+                </p>
             </div>
-            <p class="p_img">我们应该怎么做？</p>
+        </div>
     </div>
 
-    <div class="husband_reason_wrap" style="padding-top: 0px;">
-        <div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="inset: 0px auto auto 0px; margin: 0px; display: block; position: absolute; box-sizing: content-box; width: 720px; height: 0px;"><div class="husband_reason_imgs" id="husband_reason_imgs" style="width: 720px; position: absolute; margin: auto; inset: auto;">
-            <img src="assets/image/图片4暗色.png" class="img fadeout" id="husband_reason1" style=" width:80%;margin-left: 160px;margin-top: 60px">
-        </div></div>
+    <div id="solution" style="
+        width: 100%; /* 确保容器宽度撑满 */
+        position: relative; /* 确保伪元素定位正确 */
+        padding-top: 30px;
+        overflow: visible;
+        z-index: 1; /* 确保内容在模糊层之上 */
+    ">
 
+        <!-- 模糊背景层 -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/image/section3_background.jpg');
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(3px); /* 模糊程度，可调整 */
+            opacity: 0.7; /* 透明度，可调整 */
+            z-index: -1; /* 置于内容下方 */
+        "></div>
+
+        <p class="custom-text_title">
+             进步迈向更包容的未来
+        </p>
+
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+        <div class="split-container1">
+            <!-- 左侧文字部分 -->
+            <div class="text-content1">
+                <p class="custom-text">
+                    近五年，发作性睡病开始被更多媒体报道，逐渐走进大众视野。
+                </p>
+                <p class="custom-text">
+                    2023年唯一专门用于治疗发作性睡病的药物——替洛利生，已被纳入医保，为患者减轻了部分经济负担。今年5月，人社部拟增设"睡眠健康管理师"新工种，为睡眠数据监测、风险评估、心理支持与长期健康管理提供了制度化的支持，这无疑为患者群体带来了新的希望。
+                </p>
+            </div>
+
+            <!-- 右侧图片部分 -->
+            <div class="image-content1">
+                <img src="assets/image/section3.1.jpg" alt="发作性睡病相关图片" style="width:80%; height:auto;">
+            </div>
+        </div>
+
+        <div style="height: 15px;"></div> <!-- 固定高度空行 -->
+
+        <p class="custom-text">
+            然而，这些还不够。发作性睡病的病因尚不明确、复杂的诊断流程、睡眠医学专业的人才短缺、睡眠科室与中心数量不足，依然是制约患者获得有效治疗的关键瓶颈。同时，药物选择有限、副作用明显、医保覆盖不足，给患者带来的经济和心理双重压力也依旧困扰着患者。
+        </p>
+
+         <p class="custom-text">
+             未来，要真正患者创造更包容的生存环境，我国需要在三个方向持续努力：<br>
+             医学研究：深入探索发作性睡病的触发因素与完整病因链，为精准诊断与靶向治疗奠定基础；<br>
+             医疗资源建设 ： 培养更多睡眠医学专业人才，扩大权威诊断与治疗机构的地域覆盖，缩短患者的确诊等待时间；<br>
+             社会支持与认知提升：通过媒体传播与公益行动，减少误解与偏见，让发作性睡病被更多人理解与接纳。
+        </p>
+
+        <p class="custom-text">
+            当科学、医疗与媒体三方形成合力，发作性睡病患者才有机会摆脱被误解与忽视的困境，切实地为他们提供帮助，走向一个真正理解他们、包容他们的未来。
+        </p>
     </div>
 
-<div style="width:1200px;height:0.5px;margin:0 auto;padding:0;background-color:#ffffff;overflow:hidden;"></div>
+    <div style="height: 15px;"></div> <!-- 固定高度空行 -->
 
-<div id="footer">
-    <p style="font-size: 1.1rem; line-height: 2rem;">指导老师：刘涛&nbsp;&nbsp;赵甜芳</p>
-    <p style="font-size: 1.1rem; line-height: 2rem;">数据分析：景胜彬&nbsp;陈沛涵&nbsp;张嘉茵</p>
-  
-    <p>&nbsp;</p>
-    <p style="font-size: 1.1rem; line-height: 2rem;">主要参考资料：</p>
-    <p>[1]中国证券报.</p>
-    <p>[2]南方周末.</p>
-    <p>references</p>
-    
-    <p>&nbsp;</p>
-    <p style="text-align: center; padding-bottom: 2em;">新闻与传播学院</p>
-</div>
+    <div style="width:1200px;height:0.5px;margin:0 auto;padding:0;background-color:black;overflow:hidden;"></div>
+
+    <div id="footer">
+        <p style="font-size: 1.1rem; line-height: 2rem;">指导老师：刘涛&nbsp;&nbsp;赵甜芳</p>
+        <p style="font-size: 1.1rem; line-height: 2rem;">数据分析：景胜彬&nbsp;陈沛涵&nbsp;张嘉茵</p>
+
+        <p>&nbsp;</p>
+        <p style="font-size: 1.1rem; line-height: 2rem;">主要参考资料：</p>
+        <p>[1]中国证券报.</p>
+        <p>[2]南方周末.</p>
+        <p>references</p>
+
+        <p>&nbsp;</p>
+        <p style="text-align: center; padding-bottom: 2em;">新闻与传播学院</p>
+    </div>
 
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>

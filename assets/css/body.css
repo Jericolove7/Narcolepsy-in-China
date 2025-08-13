@@ -5,41 +5,29 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: grey;
+    background-color: #ddf2f6;
     font-family: "è‹¹æ–¹";
     font-weight: 350;
     line-height: 2.1rem;
     letter-spacing: 1px;
 }
 
-/* h2 {
-            font-weight: 700;
-            font-size: 1.8rem;
-            line-height: 2.5rem;
-            letter-spacing: 0.1875em;
-            text-align: center;
-            margin: 2rem auto 1rem auto;
-            color: #D25027;
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-        } */
 p {
     color: #f6f6f6;
     display: block;
     font-size: 1.02rem;
-    /* line-height: 2rem; */
-    width: 100%;
-    margin: 0 15px;
-    margin: 1.8rem auto;
+
+    width: 85%;
+    margin: 1.8rem 0; /* 移除auto左右居中 */
+    padding: 0 15px; /* 改用内边距 */
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 1024px) {
     p {
-        width: 900px;
-        margin: 0 auto;
-        width: calc(100% - 60px);
-        max-width: 700px;
+        max-width: none; /* 移除最大宽度限制 */
+        padding: 0 30px; /* 适当增加内边距 */
+
         margin: 1.9rem auto;
     }
 }
@@ -143,8 +131,10 @@ p {
 
 #solution {
     position: relative;
-    width: auto;
-    margin: 0 15px;
+
+    width: 100%;
+    margin: 0;
+    padding: 30px 0; /* 保留上下内边距 */
 }
 
 @media screen and (min-width: 1024px) {
@@ -353,7 +343,7 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1rem;
-    /* border: 1px solid blue; */
+    color: black; /* 添加这行 */
 }
 
 #footer p {
@@ -362,6 +352,7 @@ p {
     margin: 0 auto;
     line-height: 1.7rem;
     font-weight: 350;
+    color: black; /* 添加这行 */
 }
 
 #mental_disease {
@@ -392,15 +383,13 @@ p {
 }
 
 /* 按钮位置 */
-
-
 ul {
     list-style: none;
     position: fixed;
     width: auto;       /* 改为自动宽度（原54px太窄） */
     right: 20px;       /* 贴右（原left: -15px） */
     left: auto;        /* 取消左定位 */
-    top: 10px;         /* 保留顶部距离 */
+    top: -8px;         /* 保留顶部距离 */
     margin-left: 0;
     overflow: hidden;
     z-index: 100;
@@ -448,7 +437,7 @@ ul li {
     line-height: 48px;
     font-size: 12px;
     font-weight: 700;
-    color: white !important;       /* 字体颜色设为白色（原已是白色，可省略） */
+    color: black;       /* 字体颜色设为白色（原已是白色，可省略） */
     border-radius: 3px;
     background-color: transparent !important; /* 关键修改：背景透明 */
     text-decoration: none !important;
@@ -1069,8 +1058,8 @@ audio {
 
 .portfolio-stack {
   position: relative;
-  width: 350px;    /* 根据需要调节 */
-  height: 350px;
+  width: 300px;    /* 根据需要调节 */
+  height: 300px;
   margin: auto;
 }
 
@@ -1099,7 +1088,7 @@ audio {
 [class^="section"] {
   position: sticky; /* 改为整个 section 固定 */
   top: 45px;          /* 开始固定 */
-  height: 100vh;   /* 每个 section 占满整个视口 */
+  height: 80vh;   /* 每个 section 占满整个视口 */
   margin-bottom: 0; /* 移除原有间距 */
   z-index: 1;      /* 初始层级 */
   overflow: hidden; /* 隐藏超出部分 */
@@ -1143,37 +1132,166 @@ audio {
 /* SECTION 1 */
 .section1 { z-index: 1; }
 .tag-label1 {
-  background: white;
+  background: #CDF5FD;
 }
 .tag-label1::after {
-  background: white;
+  background: #CDF5FD;
 }
 .work-card1 {
-  background: white;
+  background: #CDF5FD;
 }
 
 /* SECTION 2 */
 .section2 { z-index: 2; }
 .tag-label2 {
-  background: yellow;
+  background: #A0E9FF;
   margin-left: 190px; /* 向右平移 20px */
 }
 .tag-label2::after {
-  background: yellow;
+  background: #A0E9FF;
 }
 .work-card2 {
-  background: yellow;
+  background: #A0E9FF;
 }
 
 /* SECTION 3 */
 .section3 { z-index: 3; }
 .tag-label3 {
-  background: blue;
+  background: #00A9FF;
   margin-left: 383px; /* 向右平移 20px */
 }
 .tag-label3::after {
-  background: blue;
+  background: #00A9FF;
 }
 .work-card3 {
-  background: blue;
+  background: #00A9FF;
 }
+
+    /* 分栏容器样式1 */
+    .split-container1 {
+        display: flex; /* 启用弹性布局 */
+        width: 95%;
+        margin: 20px 38px;
+        gap: 30px; /* 两栏间距 */
+        align-items: center; /* 垂直居中 */
+    }
+
+    /* 左侧文字栏 */
+    .text-content1 {
+        flex: 1; /* 占据剩余空间 */
+        padding: 30px;
+    }
+
+    /* 右侧图片栏 */
+    .image-content1 {
+        flex: 1; /* 与文字栏等宽 */
+        max-width: 50%; /* 限制最大宽度 */
+    }
+
+    /* 分栏容器样式2 */
+    .split-container2 {
+        display: flex; /* 启用弹性布局 */
+        width: 95%;
+        margin: 20px 70px;
+        gap: -20px; /* 两栏间距 */
+        align-items: center; /* 垂直居中 */
+    }
+
+    /* 右侧文字栏 */
+    .text-content2 {
+        flex: 0.8; /* 占据剩余空间 */
+        padding: 10px;
+    }
+
+    /* 左侧图片栏 */
+    .image-content2 {
+        padding-right: -10px; /* 移除右侧内边距 */
+        flex: 1; /* 与文字栏等宽 */
+        max-width: 50%; /* 限制最大宽度 */
+    }
+
+    /* Section3字体格式 */
+    .custom-text {
+        font-family: '黑体', SimHei, sans-serif;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    /* Section1字体格式 */
+    .custom-text1 {
+        font-family: '黑体', SimHei, sans-serif;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 25px;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    /* Section1字体格式加粗 */
+    .custom-text11 {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
+
+    /* Section1字体格式居中 */
+    .custom-text12 {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: center; /* 改为居中 */
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
+
+    /* Section1字体格式左右分栏 */
+    .custom-text13 {
+        font-family: '黑体', SimHei, sans-serif;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    /* 响应式设计：小屏幕时改为上下排列 */
+    @media (max-width: 768px) {
+        .split-container {
+            flex-direction: column;
+        }
+        .image-content {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    /* 上下分栏容器样式 */
+    .vertical-container {
+        display: flex;
+        flex-direction: column; /* 改为垂直排列 */
+        width: 100%;
+        margin: 20px 0;
+        gap: 30px; /* 上下间距 */
+        background-image: url('assets/image/section1.4.png');
+        background-size: cover;
+        background-position: center;
+        align-items: center; /* 垂直居中 */
+    }
+
+    /* 标题 */
+    .custom-text_title {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: center; /* 改为居中 */
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
