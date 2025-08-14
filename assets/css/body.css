@@ -115,6 +115,7 @@ p {
     position: relative;
     width: auto;
     margin: 0 15px;
+    transform: translateY(-13px);/* husband与下一部分的间隙 */
 }
 
 #child {
@@ -1088,10 +1089,8 @@ audio {
 [class^="section"] {
   position: sticky; /* 改为整个 section 固定 */
   top: 45px;          /* 开始固定 */
-  height: 80vh;   /* 每个 section 占满整个视口 */
-  margin-bottom: 0; /* 移除原有间距 */
-  z-index: 1;      /* 初始层级 */
-  overflow: hidden; /* 隐藏超出部分 */
+  margin-bottom: 0;
+  z-index: 1;
 }
 
 /* 通过递增 z-index 实现覆盖效果 */
@@ -1124,13 +1123,17 @@ audio {
   box-sizing: border-box;
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  height: calc(100vh - 60px); /* 高度 = 视口高度 - 标签和间距 */
-  overflow-y: auto; /* 允许内容滚动 */
+  height: calc(100vh - 60px); /* 默认高度 */
+  overflow-y: auto; /* 默认内部滚动 */
 }
 
 /* 独立定制每个section */
 /* SECTION 1 */
-.section1 { z-index: 1; }
+.section1 {
+  height: 80vh;
+  overflow: hidden;
+  z-index: 1;
+}
 .tag-label1 {
   background: #CDF5FD;
 }
@@ -1141,24 +1144,35 @@ audio {
   background: #CDF5FD;
 }
 
+/* 单独扩展 section2 和 section3 */
+.section2, .section3 {
+  height: auto;
+  min-height: 80vh;
+  overflow: hidden; /* 隐藏溢出部分 */
+}
+
 /* SECTION 2 */
-.section2 { z-index: 2; }
+.section2 {
+  z-index: 2;
+}
 .tag-label2 {
   background: #A0E9FF;
-  margin-left: 190px; /* 向右平移 20px */
+  margin-left: 100px; /* 向右平移 20px */
 }
 .tag-label2::after {
   background: #A0E9FF;
 }
 .work-card2 {
   background: #A0E9FF;
+  height: calc(100vh - 60px); /* 减去标签高度 */
+  overflow-y: auto; /* 恢复内部滚动 */
 }
 
 /* SECTION 3 */
 .section3 { z-index: 3; }
 .tag-label3 {
   background: #00A9FF;
-  margin-left: 383px; /* 向右平移 20px */
+  margin-left: 203px; /* 向右平移 20px */
 }
 .tag-label3::after {
   background: #00A9FF;
@@ -1170,7 +1184,7 @@ audio {
     /* 分栏容器样式1 */
     .split-container1 {
         display: flex; /* 启用弹性布局 */
-        width: 95%;
+        width: 90%;
         margin: 20px 38px;
         gap: 30px; /* 两栏间距 */
         align-items: center; /* 垂直居中 */
@@ -1191,7 +1205,7 @@ audio {
     /* 分栏容器样式2 */
     .split-container2 {
         display: flex; /* 启用弹性布局 */
-        width: 95%;
+        width: 90%;
         margin: 20px 70px;
         gap: -20px; /* 两栏间距 */
         align-items: center; /* 垂直居中 */
