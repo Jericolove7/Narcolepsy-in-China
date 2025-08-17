@@ -1202,8 +1202,8 @@ audio {
         max-width: 50%; /* 限制最大宽度 */
     }
 
-    /* 分栏容器样式2 */
-    .split-container2 {
+    /* 分栏容器样式3 未来部分 */
+    .split-container3 {
         display: flex; /* 启用弹性布局 */
         width: 90%;
         margin: 20px 70px;
@@ -1212,25 +1212,43 @@ audio {
     }
 
     /* 右侧文字栏 */
-    .text-content2 {
+    .text-content3 {
         flex: 0.8; /* 占据剩余空间 */
         padding: 10px;
     }
 
     /* 左侧图片栏 */
-    .image-content2 {
+    .image-content3 {
         padding-right: -10px; /* 移除右侧内边距 */
         flex: 1; /* 与文字栏等宽 */
         max-width: 50%; /* 限制最大宽度 */
+        position: relative;
+        top: 140px; /* 向下偏移20px */
+        left: -90px; /* 向右偏移10px */
     }
 
-    /* Section3字体格式 */
-    .custom-text {
-        font-family: '黑体', SimHei, sans-serif;
-        line-height: 1.5;
-        text-align: left;
-        font-size: 25px;
-        margin-bottom: 15px;
+    /* 分栏容器样式1 */
+    .split-container2 {
+        display: flex; /* 启用弹性布局 */
+        width: 90%;
+        margin: 20px 38px;
+        gap: 30px; /* 两栏间距 */
+        align-items: center; /* 垂直居中 */
+    }
+
+    /* 左侧文字栏 */
+    .text-content2 {
+        flex: 1; /* 占据剩余空间 */
+        padding: 30px;
+    }
+
+    /* 右侧图片栏 */
+    .image-content2 {
+        flex: 1; /* 与文字栏等宽 */
+        max-width: 50%; /* 限制最大宽度 */
+        position: relative;
+        top: 30px; /* 向下偏移20px */
+        left: 120px; /* 向右偏移10px */
     }
 
     /* Section1字体格式 */
@@ -1265,16 +1283,6 @@ audio {
     font-weight: bold; /* 添加这行使字体加粗 */
     }
 
-    /* Section1字体格式左右分栏 */
-    .custom-text13 {
-        font-family: '黑体', SimHei, sans-serif;
-        line-height: 1.5;
-        text-align: left;
-        font-size: 30px;
-        margin-bottom: 15px;
-        color: black;
-    }
-
     /* 响应式设计：小屏幕时改为上下排列 */
     @media (max-width: 768px) {
         .split-container {
@@ -1305,6 +1313,39 @@ audio {
     line-height: 1.5;
     text-align: center; /* 改为居中 */
     font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
+
+    /* 左标题 */
+    .custom-text_title2 {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: left; /* 改为左 */
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
+
+    /* 中标题 */
+    .custom-text_title3 {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: write;
+    font-weight: bold; /* 添加这行使字体加粗 */
+    }
+
+    /* 左中标题 */
+    .custom-text_title4 {
+    font-family: '黑体', SimHei, sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 30px;
     margin-bottom: 15px;
     color: black;
     font-weight: bold; /* 添加这行使字体加粗 */
