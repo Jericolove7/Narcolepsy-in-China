@@ -115,13 +115,14 @@ p {
     position: relative;
     width: auto;
     margin: 0 15px;
-    transform: translateY(-13px);/* husband与下一部分的间隙 */
+    transform: translateY(-13px);/* 与上一部分的间隙 */
 }
 
 #child {
     position: relative;
     width: auto;
     margin: 0 15px;
+    transform: translateY(-13px);/* 与上一部分的间隙 */
 }
 
 #whole {
@@ -132,10 +133,16 @@ p {
 
 #solution {
     position: relative;
-
     width: 100%;
     margin: 0;
     padding: 30px 0; /* 保留上下内边距 */
+    transform: translateY(-13px);/* 与上一部分的间隙 */
+}
+
+#last {
+    position: relative;
+    width: auto;
+    transform: translateY(-14px);/* 与上一部分的间隙 */
 }
 
 @media screen and (min-width: 1024px) {
