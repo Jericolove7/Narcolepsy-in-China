@@ -115,14 +115,14 @@ p {
     position: relative;
     width: auto;
     margin: 0 15px;
-    transform: translateY(-13px);/* 与上一部分的间隙 */
+    transform: translateY(-15px);/* 与上一部分的间隙 */
 }
 
 #child {
     position: relative;
     width: auto;
     margin: 0 15px;
-    transform: translateY(-13px);/* 与上一部分的间隙 */
+    transform: translateY(-15px);/* 与上一部分的间隙 */
 }
 
 #whole {
@@ -136,13 +136,19 @@ p {
     width: 100%;
     margin: 0;
     padding: 30px 0; /* 保留上下内边距 */
-    transform: translateY(-13px);/* 与上一部分的间隙 */
+    transform: translateY(-15px);/* 与上一部分的间隙 */
 }
 
 #last {
     position: relative;
     width: auto;
-    transform: translateY(-14px);/* 与上一部分的间隙 */
+    transform: translateY(-17px);/* 与上一部分的间隙 */
+}
+
+#final {
+    position: relative;
+    width: auto;
+    transform: translateY(-18px);/* 与上一部分的间隙 */
 }
 
 @media screen and (min-width: 1024px) {
@@ -395,64 +401,43 @@ ul {
     list-style: none;
     position: fixed;
     width: auto;       /* 改为自动宽度（原54px太窄） */
-    right: 20px;       /* 贴右（原left: -15px） */
+    right: 40px;       /* 贴右（原left: -15px） */
     left: auto;        /* 取消左定位 */
-    top: -8px;         /* 保留顶部距离 */
+    top: 7px;         /* 保留顶部距离 */
     margin-left: 0;
     overflow: hidden;
     z-index: 100;
-    display: flex;     /* 新增：水平排列 */
-    gap: 10px;          /* 新增：按钮间距 */
+    display: flex;
+    flex-direction: column;  /* 新增：改为垂直排列 */
+    gap: 13px;          /* 新增：按钮间距 */
 }
 
 ul li {
     position: relative;
-    width: 48px;
-    height: 48px;
-    background: red;   /* 测试用颜色，实际用你的背景图 */
-    margin-top: 0;     /* 取消上间距（原margin-top: 3px） */
+    width: auto; /* 改为自动宽度 */
+    height: auto; /* 改为自动高度 */
+    margin-top: 0;
     cursor: pointer;
     overflow: hidden;
+    background-color: rgba(14, 78, 144, 0.3); /* #0E4E90 的 RGBA 格式，30% 透明度 */
+    padding: 0px; /* 添加内边距 */
+    border-radius: 9px; /* 添加圆角 */
+    width: fit-content; /* 宽度适应内容 */
 }
 
-.li1 {
-    background: url(../image/nav.png) 0 0;
-}
 
-.li2 {
-    background: url(../image/nav.png) 0 -51px;
-}
-
-.li3 {
-    background: url(../image/nav.png) 0 -102px;
-}
-
-.li4 {
-    background: url(../image/nav.png) 0 -153px;
-}
-
-.li5 {
-    background: url(../image/nav.png) 0 -204px;
-}
 
 .nav_a {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative; /* 改为relative定位 */
+    display: inline-block; /* 确保正确显示 */
     width: 100%;
     height: 100%;
-    line-height: 48px;
+    line-height: normal; /* 调整行高 */
     font-size: 12px;
     font-weight: 700;
-    color: black;       /* 字体颜色设为白色（原已是白色，可省略） */
-    border-radius: 3px;
-    background-color: transparent !important; /* 关键修改：背景透明 */
-    text-decoration: none !important;
+    color: black;
+    text-decoration: none;
     text-align: center;
-    transform: rotate3d(0, 0, 1, 0deg) !important;/* 强制按钮为默认角度（不旋转） */
-    opacity: 1 !important; /* 强制显示 */
-    transition: none !important;
 }
 
 #gif_2287 {
@@ -955,32 +940,6 @@ audio {
         width: 100%;
     }
 
-/*
-    #ending_gif {
-        width: 100%;
-        position: relative;
-        right: 0px;
-        top: 0;
-        opacity:0;
-    }
-    #ending_img {
-    position:relative;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 2;}
-
-    #light_gif {
-    position: relative;
-    right: 0;
-    top: 0px;
-    width: 100%;
-    cursor: pointer;
-    opacity: 1;
-    display: block;
-}
-*/
-
     #ending_p {
         padding:0 10px;
         width: 100%;
@@ -1357,3 +1316,210 @@ audio {
     color: black;
     font-weight: bold; /* 添加这行使字体加粗 */
     }
+
+
+/* 通用移动端适配规则 */
+@media only screen and (max-width: 768px) {
+    /* husband 部分适配 */
+    #husband {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        transform: none;
+    }
+
+    /* child 部分适配 */
+    #child {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        transform: none;
+    }
+
+    /* solution 部分适配 */
+    #solution {
+        width: 100%;
+        margin: 0;
+        padding: 20px 15px;
+        transform: none;
+    }
+
+    /* last 部分适配 */
+    #last {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        transform: none;
+    }
+
+    /* 图片适配 */
+    .img_400, .img_500, .img_600, .img_650,
+    .img_700, .img_800, .img_900, .img_1025,
+    .img_1200, .img_full {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* 文本段落适配 */
+    p {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* 特殊段落适配 */
+    .p_center, .p_stress, .p_stress_ending,
+    .p_italic, .p_img {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* 隐藏桌面端元素，显示移动端元素 */
+    #p_mobile1, #p_mobile2 {
+        display: block;
+    }
+
+    /* 导航按钮适配 */
+    ul {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: rgba(255,255,255,0.9);
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    ul li {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    /* 特殊元素适配 */
+    #ending {
+        width: 100%;
+        border: none;
+    }
+
+    #ending_p {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+
+    #ending_gif, #ending_img, #light_gif {
+        position: relative;
+        width: 100%;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* 浮动元素适配 */
+    .fl, .fr {
+        float: none;
+    }
+
+    /* 分栏布局适配 */
+    .split-container1, .split-container2, .split-container3 {
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 15px;
+    }
+
+    .text-content1, .text-content2, .text-content3,
+    .image-content1, .image-content2, .image-content3 {
+        flex: none;
+        max-width: 100%;
+        padding: 0 15px;
+        position: static;
+    }
+
+    /* 字体大小适配 */
+    .custom-text1, .custom-text11, .custom-text12 {
+        font-size: 18px;
+    }
+
+    .custom-text_title {
+        font-size: 28px;
+    }
+
+    .custom-text_title2, .custom-text_title3, .custom-text_title4 {
+        font-size: 24px;
+    }
+
+    /* 特殊效果适配 */
+    #suicide1, #age1, #mental_disease_img2 {
+        position: relative;
+        opacity: 1;
+        width: 100%;
+    }
+
+    #mental_disease_rectangle {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    /* 音频控件适配 */
+    .audiobox {
+        position: relative;
+        width: 100%;
+    }
+
+    .caifangyinpin {
+        right: 15px;
+        top: 15px;
+    }
+
+    /* 页脚适配 */
+    #footer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #footer p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+/* 更小屏幕的额外适配 */
+@media only screen and (max-width: 480px) {
+    /* 进一步减小字体大小 */
+    .custom-text1, .custom-text11, .custom-text12 {
+        font-size: 16px;
+    }
+
+    .custom-text_title {
+        font-size: 24px;
+    }
+
+    .custom-text_title2, .custom-text_title3, .custom-text_title4 {
+        font-size: 20px;
+    }
+
+    /* 导航按钮更小 */
+    ul li {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* 段落行高调整 */
+    p {
+        line-height: 1.6;
+    }
+}
