@@ -560,12 +560,6 @@ audio {
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 768px) {
     *, *:after, *:before {
         -webkit-box-sizing:border-box;
@@ -726,7 +720,7 @@ audio {
     #p_mobile1{
         display: block;
     }
-    
+
     #p_mobile2{
         display: block;
     }
@@ -1249,15 +1243,13 @@ audio {
     font-weight: bold; /* 添加这行使字体加粗 */
     }
 
-    /* 响应式设计：小屏幕时改为上下排列 */
-    @media (max-width: 768px) {
-        .split-container {
-            flex-direction: column;
-        }
-        .image-content {
-            max-width: 100%;
-            margin-top: 20px;
-        }
+    /* 数据来源格式 */
+    .custom-text2 {
+        font-family: '黑体', SimHei, sans-serif;
+        text-align: left;
+        font-size: 17px;
+        margin-bottom: 15px;
+        color: black;
     }
 
     /* 上下分栏容器样式 */
@@ -1316,210 +1308,3 @@ audio {
     color: black;
     font-weight: bold; /* 添加这行使字体加粗 */
     }
-
-
-/* 通用移动端适配规则 */
-@media only screen and (max-width: 768px) {
-    /* husband 部分适配 */
-    #husband {
-        width: 100%;
-        margin: 0;
-        padding: 0 15px;
-        transform: none;
-    }
-
-    /* child 部分适配 */
-    #child {
-        width: 100%;
-        margin: 0;
-        padding: 0 15px;
-        transform: none;
-    }
-
-    /* solution 部分适配 */
-    #solution {
-        width: 100%;
-        margin: 0;
-        padding: 20px 15px;
-        transform: none;
-    }
-
-    /* last 部分适配 */
-    #last {
-        width: 100%;
-        margin: 0;
-        padding: 0 15px;
-        transform: none;
-    }
-
-    /* 图片适配 */
-    .img_400, .img_500, .img_600, .img_650,
-    .img_700, .img_800, .img_900, .img_1025,
-    .img_1200, .img_full {
-        width: 100%;
-        margin: 0;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-
-    /* 文本段落适配 */
-    p {
-        width: 100%;
-        margin: 1rem 0;
-        padding: 0 15px;
-        font-size: 14px;
-        line-height: 1.8;
-    }
-
-    /* 特殊段落适配 */
-    .p_center, .p_stress, .p_stress_ending,
-    .p_italic, .p_img {
-        width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-
-    /* 隐藏桌面端元素，显示移动端元素 */
-    #p_mobile1, #p_mobile2 {
-        display: block;
-    }
-
-    /* 导航按钮适配 */
-    ul {
-        position: fixed;
-        bottom: 0;
-        top: auto;
-        left: 0;
-        right: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        background: rgba(255,255,255,0.9);
-        padding: 10px 0;
-        z-index: 100;
-    }
-
-    ul li {
-        width: 40px;
-        height: 40px;
-        margin: 0;
-    }
-
-    /* 特殊元素适配 */
-    #ending {
-        width: 100%;
-        border: none;
-    }
-
-    #ending_p {
-        width: 100%;
-        margin: 20px 0;
-        padding: 0 15px;
-    }
-
-    #ending_gif, #ending_img, #light_gif {
-        position: relative;
-        width: 100%;
-        right: auto;
-        top: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
-    /* 浮动元素适配 */
-    .fl, .fr {
-        float: none;
-    }
-
-    /* 分栏布局适配 */
-    .split-container1, .split-container2, .split-container3 {
-        flex-direction: column;
-        margin: 10px 0;
-        gap: 15px;
-    }
-
-    .text-content1, .text-content2, .text-content3,
-    .image-content1, .image-content2, .image-content3 {
-        flex: none;
-        max-width: 100%;
-        padding: 0 15px;
-        position: static;
-    }
-
-    /* 字体大小适配 */
-    .custom-text1, .custom-text11, .custom-text12 {
-        font-size: 18px;
-    }
-
-    .custom-text_title {
-        font-size: 28px;
-    }
-
-    .custom-text_title2, .custom-text_title3, .custom-text_title4 {
-        font-size: 24px;
-    }
-
-    /* 特殊效果适配 */
-    #suicide1, #age1, #mental_disease_img2 {
-        position: relative;
-        opacity: 1;
-        width: 100%;
-    }
-
-    #mental_disease_rectangle {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 100%;
-        height: auto;
-    }
-
-    /* 音频控件适配 */
-    .audiobox {
-        position: relative;
-        width: 100%;
-    }
-
-    .caifangyinpin {
-        right: 15px;
-        top: 15px;
-    }
-
-    /* 页脚适配 */
-    #footer {
-        width: 100%;
-        padding: 15px;
-    }
-
-    #footer p {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-}
-
-/* 更小屏幕的额外适配 */
-@media only screen and (max-width: 480px) {
-    /* 进一步减小字体大小 */
-    .custom-text1, .custom-text11, .custom-text12 {
-        font-size: 16px;
-    }
-
-    .custom-text_title {
-        font-size: 24px;
-    }
-
-    .custom-text_title2, .custom-text_title3, .custom-text_title4 {
-        font-size: 20px;
-    }
-
-    /* 导航按钮更小 */
-    ul li {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* 段落行高调整 */
-    p {
-        line-height: 1.6;
-    }
-}
