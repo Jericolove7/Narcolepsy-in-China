@@ -1166,7 +1166,7 @@ audio {
     .split-container3 {
         display: flex; /* 启用弹性布局 */
         width: 90%;
-        margin: -180px 70px;
+        margin: -170px 70px;
         gap: -20px; /* 两栏间距 */
         align-items: center; /* 垂直居中 */
     }
@@ -1248,6 +1248,15 @@ audio {
         font-family: '黑体', SimHei, sans-serif;
         text-align: left;
         font-size: 17px;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    /* 数据来源格式 */
+    .custom-text21 {
+        font-family: '黑体', SimHei, sans-serif;
+        text-align: left;
+        font-size: 15px;
         margin-bottom: 15px;
         color: black;
     }
