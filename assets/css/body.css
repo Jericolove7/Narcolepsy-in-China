@@ -1146,7 +1146,7 @@ audio {
         display: flex; /* 启用弹性布局 */
         width: 90%;
         margin: 20px 38px;
-        gap: 30px; /* 两栏间距 */
+        gap: 40px; /* 两栏间距 */
         align-items: center; /* 垂直居中 */
     }
 
@@ -1166,14 +1166,14 @@ audio {
     .split-container3 {
         display: flex; /* 启用弹性布局 */
         width: 90%;
-        margin: 20px 70px;
+        margin: -180px 70px;
         gap: -20px; /* 两栏间距 */
         align-items: center; /* 垂直居中 */
     }
 
     /* 右侧文字栏 */
     .text-content3 {
-        flex: 0.8; /* 占据剩余空间 */
+        flex: 0.7; /* 占据剩余空间 */
         padding: 10px;
     }
 
@@ -1181,10 +1181,10 @@ audio {
     .image-content3 {
         padding-right: -10px; /* 移除右侧内边距 */
         flex: 1; /* 与文字栏等宽 */
-        max-width: 50%; /* 限制最大宽度 */
+        max-width: 80%; /* 限制最大宽度 */
         position: relative;
         top: 140px; /* 向下偏移20px */
-        left: -90px; /* 向右偏移10px */
+        left: -80px; /* 向右偏移10px */
     }
 
     /* 分栏容器样式1 */
@@ -1303,7 +1303,7 @@ audio {
     font-family: '黑体', SimHei, sans-serif;
     line-height: 1.5;
     text-align: left;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 15px;
     color: black;
     font-weight: bold; /* 添加这行使字体加粗 */
